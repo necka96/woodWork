@@ -295,9 +295,11 @@ img {
   .d-sm-active-show {
     display: none;
     -webkit-text-fill-color: var(--text-first-color);
+    color: var(--text-first-color);
   }
   .d-sm-hide-show {
     -webkit-text-fill-color: var(--text-first-color);
+    color: var(--text-first-color);
   }
   .menu.active .d-sm-active-show {
     display: block;
