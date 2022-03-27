@@ -26,10 +26,40 @@ var swiper = new Swiper(".header-swiper", {
         },
       });
 // counter
-
+  var swiper = new Swiper(".home-swiper", {
+        slidesPerView: 1,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: false,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+         breakpoints: {
+          "@0.00": {
+            slidesPerView: 1,
+      
+          },
+          "@0.75": {
+            slidesPerView: 2,
+      
+          },
+          "@1.00": {
+            slidesPerView: 3,
+         
+          },
+          "@1.50": {
+            slidesPerView: 4,
+         
+          },
+        },
+      });
 $(document).ready(function () {
   $(".count").counterUp({
     delay: 10,
     time: 1200
   })
 });
+   $(document).ready(function () {
+            $('.responsive-testimonials').responsiveTestimonials();
+        });
