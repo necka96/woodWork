@@ -24,6 +24,7 @@ var swiper = new Swiper(".header-swiper", {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        autoplay: true
       });
 // counter
   var swiper = new Swiper(".home-swiper", {
