@@ -308,7 +308,57 @@ img {
   font-size: var(--font-size-md);
   line-height: 1.2;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
 }
+/* home-gallery */
+.home-gallery {
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  height: 640px;
+  gap: 10px;
+  padding: 2rem;
+}
+.item {
+  position: relative;
+  background: var(--text-first-color);
+  place-items: center;
+  cursor: pointer;
+}
+.item img {
+  position: absolute;
+}
+.item .text {
+  z-index: 2;
+  width: 345px;
+  height: 170px;
+  padding: 60px 35px 50px;
+  text-align: center;
+  place-items: center;
+  background: url("../images/shape-3.png.webp") center/cover;
+  color: var(--primary-color);
+  -webkit-text-fill-color: var(--primary-color);
+  transform: scale(0);
+  transition: transform 0.5s ease;
+  pointer-events: none;
+}
+.item:hover .text {
+  transform: scale(1);
+}
+.item .text h2 {
+  font-size: 1.2rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+.item .text span {
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 0.8rem;
+}
+.item .text span i {
+  margin-right: 10px;
+}
+
+/* media-query */
 @media (max-width: 995px) {
   .header-holder h1 {
     font-size: var(--font-size-2xl);
