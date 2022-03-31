@@ -310,7 +310,7 @@ img {
 .home-testemonial {
   padding: 2rem;
 }
-.wrapper {
+/* .wrapper {
   padding-bottom: 40px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -318,7 +318,8 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
+
 .home-testemonial h2 {
   margin: 2em 0;
   font-family: serif;
@@ -521,6 +522,7 @@ textarea,
 }
 .submit-btn {
   color: var(--primary-color);
+  text-transform: uppercase;
 }
 input,
 textarea {
@@ -537,6 +539,28 @@ textarea {
   resize: none;
   height: 15rem;
   font-family: var(--font-family-primary);
+}
+/* start-project */
+.start-project {
+  width: 100%;
+  place-items: center;
+  text-align: center;
+  height: 50vh;
+  background: url("../images/call-bg.jpg.webp") center/cover;
+  color: var(--primary-color);
+}
+.start-project .btn:hover {
+  background: var(--section-color);
+}
+.start-project .text-holder {
+  width: 100%;
+  max-width: 500px;
+}
+.start-project .btn a {
+  transition: color 0.5s ease;
+}
+.start-project .btn:hover a {
+  color: var(--text-first-color);
 }
 /* media-query */
 @media (max-width: 995px) {
